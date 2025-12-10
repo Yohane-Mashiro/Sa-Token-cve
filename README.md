@@ -2,7 +2,6 @@
 
 - **影响组件**: sa-token-starter 下的 `sa-token-jboot-plugin` 与 `sa-token-jfinal-plugin`（JDK 原生序列化）；sa-token-jackson（Jackson 多态反序列化）；可选：当 `SaManager` 配置为 `sa-token-fastjson`/`fastjson2` 时，Fastjson 相关路径。
 - **漏洞类型**: 不安全的反序列化（可能导致远程代码执行 RCE，具体视运行时类路径与外部可控性而定）
-- **CVSS v3.1 估算**: 可能为 9.8 (CRITICAL) 在存在可控输入且可达 gadget 链的条件下；在受限环境或严格白名单下，严重性下降（取决于可利用条件）。
 
 **受影响文件与调用链（精确定位）**
 
